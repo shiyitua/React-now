@@ -3,7 +3,10 @@ import './TabButton.css'
 export default function TabButton(props) {
   return (
     <li>
-      <button onClick={props.onSelected}>{props.children}</button>
+      <button 
+        className={props.isSelected ? 'active' : ''} 
+        onClick={props.onSelected}>{props.children}
+      </button>
     </li>
   )
 }
