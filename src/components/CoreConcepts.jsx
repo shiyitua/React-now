@@ -1,11 +1,11 @@
+import Section from "./Section"
 import CoreConcept from "./CoreConcept/CoreConcept"
 
 import { CORE_CONCEPTS } from "../data"
 
 export default function CoreConcepts() {
   return (
-    <section id='core-concepts'>
-      <h2>核心概念</h2>
+    <Section id='core-concepts' title='核心概念'>
       <ul>
         {CORE_CONCEPTS.map((conceptItem) => (
           <CoreConcept 
@@ -22,6 +22,6 @@ export default function CoreConcepts() {
         <CoreConcept {...CORE_CONCEPTS[2]}></CoreConcept>
         <CoreConcept {...CORE_CONCEPTS[3]}></CoreConcept> */}
       </ul>
-    </section>
+    </Section>
   )
 }
